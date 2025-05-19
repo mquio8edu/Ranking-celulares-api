@@ -14,7 +14,7 @@ def ranking():
     url = "https://www.canaltech.com.br/smartphone/melhores-celulares-ate-1000-reais/"
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'html.parser')
-    
+
     headers = soup.find_all(['h2', 'h3'])
     celulares = []
 
